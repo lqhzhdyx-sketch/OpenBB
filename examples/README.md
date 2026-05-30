@@ -78,6 +78,21 @@ This notebook demonstrates how to calculate the implied earnings move using opti
 - Find the nearest call and put strikes to the last price of the stock.
 - Calculate the implied daily move using the price of a straddle.
 
+### financial_analysis_tool
+
+This command line example creates a compact financial analysis report for a public company ticker using OpenBB price and fundamental data.
+
+- Fetch historical equity prices
+- Fetch income, balance sheet, and cash-flow statements
+- Calculate returns, volatility, drawdown, margins, returns, leverage, liquidity, and free-cash-flow metrics
+- Render Markdown or JSON reports and optionally export raw DataFrames to CSV
+
+To run, use an environment where OpenBB and your selected providers are installed:
+
+```
+python examples/financial_analysis_tool/analyze.py AAPL --provider fmp --price-provider yfinance
+```
+
 ### streamlit/news
 
 This is an example Streamlit dashboard for news headlines with data from Biztoc, Benzinga, FMP, Intrinio, and Tiingo.
